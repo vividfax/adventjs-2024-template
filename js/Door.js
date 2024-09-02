@@ -17,8 +17,8 @@ class Door {
 
         this.xPos = (x-2) * this.values.doorSpacingX;
         this.yPos = (y-2) * this.values.doorSpacingY - 15;
-        if (y == 4) this.yPos += 19;
-        if (y == 4 && x == 2) this.yPos += 14+8.5;
+        // if (y == 4) this.yPos += 19;
+        // if (y == 4 && x == 2) this.yPos += 14+8.5;
 
         if (y == 5) {
             this.yPos -= 15;
@@ -128,23 +128,24 @@ class Door {
 
             let lightColour = this.palette.black;
 
-            if (!this.opened && this.ready) {
-                let amount = sin((frameCount+this.flashOffset)*5);
-                amount = map(amount, -1, 1, 0, 1);
-                lightColour = lerpColor(color("#FFFFFF"), color("#FFE2AD"), amount);
-            }
-            else if (this.ready) lightColour = this.palette.light;
+            // if (!this.opened && this.ready) {
+            //     let amount = sin((frameCount+this.flashOffset)*5);
+            //     amount = map(amount, -1, 1, 0, 1);
+            //     lightColour = lerpColor(color("#FFFFFF"), color("#FFE2AD"), amount);
+            // }
+            // else
+            if (this.ready) lightColour = this.palette.light;
 
-            this.displayDetail(lightColour);
+            // this.displayDetail(lightColour);
 
             rectMode(CORNERS);
             noStroke();
 
-            if (this.y == 4 && this.x == 2) {
+            // if (this.y == 4 && this.x == 2) {
 
-                this.displayFrontDoor(lightColour);
+            //     this.displayFrontDoor(lightColour);
 
-            } else {
+            // } else {
 
                 let quarter = this.values.doorSize*homepage.zoom/2;
                 let weight = homepage.windowFrameStrokeWeight*homepage.zoom;
@@ -156,7 +157,7 @@ class Door {
                 line(-quarterish, 0, quarterish, 0);
                 line(0, -quarterish, 0, quarterish);
                 noStroke();
-            }
+            // }
 
             this.displayNumber();
         }

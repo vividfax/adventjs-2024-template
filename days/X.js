@@ -24,7 +24,7 @@ class DayX extends Day {
 
         push();
         translate(width/2, height/2);
-        background(200);
+        background(100);
         ellipse(sin(frameCount*0.05)*50, 0, 30);
         pop();
     }
