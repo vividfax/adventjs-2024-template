@@ -1,5 +1,9 @@
 // Made by Firstname Lastname
 
+function dayXPreload() {
+
+}
+
 class DayX extends Day {
 
     constructor () {

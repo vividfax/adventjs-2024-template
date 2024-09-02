@@ -1,5 +1,10 @@
 // Made by Rianna Suen - interactive example
 
+function day3Preload() {
+
+    assets.day3SnowmanFace = loadImage("../assets/day3/snowman-face.png");
+}
+
 class Day3 extends Day {
 
     constructor () {
