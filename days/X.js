@@ -2,6 +2,7 @@
 
 function dayXPreload() {
 
+    // Load any assets here (with assets.dayX at the front of the variable name)
 }
 
 class DayX extends Day {
