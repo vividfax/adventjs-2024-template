@@ -14,7 +14,6 @@ class Day2 extends Day {
         this.loop = true;
         this.controls = "CLICK for a new letter to Santa";
         this.credits = "Made by Mike Cook and Rianna Suen";
-        this.label = "text-based example";
 
         // setup text
 

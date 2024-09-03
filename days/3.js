@@ -13,7 +13,6 @@ class Day3 extends Day {
         this.loop = true;
         this.controls = "WASD or ARROW KEYS to move";
         this.credits = "Made by Rianna Suen";
-        this.label = "interactive example";
 
         this.mapSize = width*2;
         this.player = new this.Player(this.mapSize);
